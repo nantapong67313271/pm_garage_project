@@ -2,12 +2,6 @@
 
 โจทย์จาก **พัชรินทร์มอเตอร์** (อู่ซ่อม แต่ง และขายรถ) · รายวิชา MAD 1/2569
 
-Flutter + SQLite (sqflite) + Provider ทำงานในเครื่องทั้งหมด ไม่ต้องใช้คีย์หรือบัญชีบริการภายนอก
-
-## วิธีติดตั้งและรัน (เครื่องที่ยังไม่ได้ตั้งค่า)
-
-ต้องใช้ Flutter 3.27 ขึ้นไป
-
 ```bash
 # 1) สร้างโฟลเดอร์ android/ ios/ (repo นี้เก็บเฉพาะ lib/ test/ และ pubspec)
 flutter create . --platforms=android,ios,windows --project-name patcharin_repair
@@ -23,8 +17,6 @@ flutter test
 flutter run
 ```
 
-เปิดแอปครั้งแรก ระบบจะสร้างฐานข้อมูลและใส่ข้อมูลตัวอย่างให้เอง
-ถ้าต้องการล้างข้อมูล ให้ลบแอปออกจากเครื่องแล้วติดตั้งใหม่
 
 ## ข้อมูลทดสอบ
 
@@ -52,9 +44,8 @@ flutter run
 | คนที่ 1 | R1 รับรถ + R2 ค้นหา | `screens/intake_page.dart`, `screens/search_page.dart`, `data/customer_repository.dart`, `models/customer.dart` |
 | คนที่ 2 | R3 ฝั่งร้าน + ฐานข้อมูล | `screens/quotation_page.dart`, `data/quote_repository.dart`, `db/app_database.dart`, `models/quote_item.dart`, `widgets/quote_widgets.dart` |
 | คนที่ 3 | R3 ฝั่งลูกค้า + โหมดลูกค้า | `screens/approval_page.dart`, `screens/customer_login_page.dart`, `screens/customer_home_page.dart`, `data/approval_repository.dart`, `services/quote_calculator.dart`, `state/session_state.dart`, `test/quote_calculator_test.dart` |
-| คนที่ 4 | R4 หน้ารวมงาน + R5 ประวัติ | `screens/job_board_page.dart`, `screens/job_detail_page.dart`, `screens/history_page.dart`, `data/job_repository.dart`, `state/job_board_state.dart`, `models/job_status.dart` |
+| คนที่ 4 | R4 หน้ารวมงาน + R5 ประวัติ | `widgets/status_chip.dart`, `screens/history_page.dart`, `data/job_repository.dart`, `state/job_board_state.dart`, `models/job_status.dart` |
 
-ไฟล์ร่วม: `main.dart`, `theme.dart`, `screens/role_select_page.dart`, `widgets/format.dart`, `widgets/feedback.dart`, `widgets/status_chip.dart`, `services/app_exception.dart`
 
 ## กติกาทางธุรกิจที่เขียนไว้ในโค้ด
 
