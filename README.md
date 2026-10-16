@@ -64,3 +64,4 @@ flutter run
 - ยอดรวมนับเฉพาะรายการที่อนุมัติ แยกอะไหล่/ค่าแรง (`quote_calculator.dart`)
 - ปิดงานได้เมื่อ "ซ่อมเสร็จ" เท่านั้น และบันทึกวันที่ปิดงาน (`job_repository.dart` › `closeJob`)
 # PM_Garage_Project
+
