@@ -1,4 +1,4 @@
-name: pm_garage
+name: pm_garage_project
 description: แอปพลิเคชันบันทึกใบสั่งซ่อมที่ตรวจสอบได้และประวัติการซ่อมบำรุงรถ (พัชรินทร์มอเตอร์)
 publish_to: 'none'
 version: 1.0.0+1
