@@ -5,7 +5,7 @@ import '../models/customer.dart';
 import '../models/job_status.dart';
 import '../services/app_exception.dart';
 
-/// ผลการค้นหารถ (R2): ทะเบียน ชื่อลูกค้า และงานซ่อมล่าสุด
+/// ผลการค้นหารถ (R2): ทะเบียน ชื่อลูกค้า และงานซ่อมล่าสุ
 class VehicleSearchResult {
   const VehicleSearchResult({
     required this.vehicle,
